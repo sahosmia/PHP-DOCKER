@@ -1,0 +1,45 @@
+version: '3.8' 
+
+services:
+  web-server: 
+    build: . 
+    container_name: my-cool-app
+    ports:
+      - "9000:8000" 
+    volumes:
+      - "./app:/app"
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy 
+
+  db: 
+    image: mysql:8.0 
+    container_name: my-mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD} 
+      MYSQL_DATABASE: ${DB_NAME}
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - db_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: my-phpmyadmin
+    ports:
+      - "8080:80" 
+    environment:
+      PMA_HOST: db 
+    depends_on:
+      - db
+
+volumes:
+  db_data:
