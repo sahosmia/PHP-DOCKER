@@ -37,6 +37,34 @@
                 </svg>
                 <span class="ml-3 text-sm">Products</span>
             </a>
+
+            <a href="/clients/index.php" class="flex items-center p-3 rounded-lg hover:bg-gray-800 hover:text-blue-400 transition duration-200 group mt-1">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+                <span class="ml-3 text-sm">Clients</span>
+            </a>
+
+            <a href="/categories/index.php" class="flex items-center p-3 rounded-lg hover:bg-gray-800 hover:text-blue-400 transition duration-200 group mt-1">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 11h.01M7 15h.01M11 7h.01M11 11h.01M11 15h.01M15 7h.01M15 11h.01M15 15h.01M19 7h.01M19 11h.01M19 15h.01M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="ml-3 text-sm">Categories</span>
+            </a>
+
+            <a href="/projects/index.php" class="flex items-center p-3 rounded-lg hover:bg-gray-800 hover:text-blue-400 transition duration-200 group mt-1">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                <span class="ml-3 text-sm">Projects</span>
+            </a>
+
+            <a href="/tasks/index.php" class="flex items-center p-3 rounded-lg hover:bg-gray-800 hover:text-blue-400 transition duration-200 group mt-1">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+                <span class="ml-3 text-sm">Tasks</span>
+            </a>
         </div>
 
         <!-- Section: Reports -->
