@@ -1,4 +1,4 @@
-<?php require_once '../includes/header.php'; ?>
+<?php require_once __DIR__ . '/../includes/header.php'; ?>
 
 <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md">
     <div class="flex items-center justify-between mb-6">
@@ -44,4 +44,4 @@
 unset($_SESSION['errors'], $_SESSION['old_data']);
 ?>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>

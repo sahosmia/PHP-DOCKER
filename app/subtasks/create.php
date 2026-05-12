@@ -1,6 +1,6 @@
 <?php
-require_once '../core.php';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../core.php';
+require_once __DIR__ . '/../includes/header.php';
 
 $tasks_result = $conn->query("SELECT id, title FROM tasks ORDER BY id DESC");
 $selected_task_id = intval($_GET['task_id'] ?? 0);
@@ -53,5 +53,5 @@ $selected_task_id = intval($_GET['task_id'] ?? 0);
 
 <?php
 unset($_SESSION['errors'], $_SESSION['old_data']);
-require_once '../includes/footer.php';
+require_once __DIR__ . '/../includes/footer.php';
 ?>

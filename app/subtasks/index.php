@@ -1,6 +1,6 @@
 <?php
-require_once '../includes/header.php';
-require_once '../db.php';
+require_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../db.php';
 
 $task_id = intval($_GET['task_id'] ?? 0);
 $where = $task_id > 0 ? "WHERE s.task_id = $task_id" : "";
@@ -72,4 +72,4 @@ $result = $conn->query($sql);
     </div>
 </div>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>

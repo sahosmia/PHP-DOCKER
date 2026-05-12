@@ -1,5 +1,5 @@
 <?php
-require_once '../core.php';
+require_once __DIR__ . '/../core.php';
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $id = intval($_POST['id']);

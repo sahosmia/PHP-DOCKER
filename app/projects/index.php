@@ -1,6 +1,6 @@
 <?php
-require_once '../includes/header.php';
-require_once '../db.php';
+require_once __DIR__ . '/../includes/header.php';
+require_once __DIR__ . '/../db.php';
 
 $sql = "SELECT p.*, c.name as client_name
         FROM projects p
@@ -70,4 +70,4 @@ $result = $conn->query($sql);
     </div>
 </div>
 
-<?php require_once '../includes/footer.php'; ?>
+<?php require_once __DIR__ . '/../includes/footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php
-require_once '../core.php';
-require_once '../includes/header.php';
+require_once __DIR__ . '/../core.php';
+require_once __DIR__ . '/../includes/header.php';
 
 $projects_result = $conn->query("SELECT id, name FROM projects ORDER BY name ASC");
 $categories_result = $conn->query("SELECT id, name FROM categories ORDER BY name ASC");
@@ -86,5 +86,5 @@ $categories_result = $conn->query("SELECT id, name FROM categories ORDER BY name
 
 <?php
 unset($_SESSION['errors'], $_SESSION['old_data']);
-require_once '../includes/footer.php';
+require_once __DIR__ . '/../includes/footer.php';
 ?>
